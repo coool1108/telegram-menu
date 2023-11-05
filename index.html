@@ -131,9 +131,8 @@
         text: "~LVBET",
       });
       Telegram.WebApp.MainButton.onClick(function () {
-        // Telegram.WebApp.showAlert(initData + "|" + initDataUnsafe + "|" + version + "|" + platform + "|" + colorScheme + "|" + themeParams + "|" + isExpanded + "|" + viewportHeight + "|" + viewportStableHeight + "|" + headerColor + "|" + backgroundColor + "|" + isClosingConfirmationEnabled + "|" + BackButton + "|" + MainButton + "|" + HapticFeedback + "|" + CloudStorage);
-        // Telegram.WebApp.showAlert(initData);
-        Telegram.WebApp.showAlert('initData');
+        Telegram.WebApp.showAlert(Telegram.WebApp.initData + "|" + Telegram.WebApp.initDataUnsafe + "|" + Telegram.WebApp.version + "|" + Telegram.WebApp.platform + "|" + Telegram.WebApp.colorScheme + "|" + Telegram.WebApp.themeParams + "|" + Telegram.WebApp.isExpanded + "|" + Telegram.WebApp.viewportHeight + "|" + Telegram.WebApp.viewportStableHeight + "|" + Telegram.WebApp.headerColor + "|" + Telegram.WebApp.backgroundColor + "|" + Telegram.WebApp.isClosingConfirmationEnabled + "|" + Telegram.WebApp.BackButton + "|" + Telegram.WebApp.MainButton + "|" + Telegram.WebApp.HapticFeedback + "|" + Telegram.WebApp.CloudStorage);
+        // Telegram.WebApp.showAlert(Telegram.WebApp.initData);
       });
       Telegram.WebApp.MainButton.show();
 
@@ -179,52 +178,52 @@
         "Is Expanded: " + (Telegram.WebApp.isExpanded ? "true" : "false");
 
         var einitData = document.querySelector("#initData");
-        einitData.innerText = initData;
+        einitData.innerText = Telegram.WebApp.initData;
 
         var einitDataUnsafe = document.querySelector("#initDataUnsafe");
-        einitDataUnsafe.innerText = initDataUnsafe;
+        einitDataUnsafe.innerText = Telegram.WebApp.initDataUnsafe;
 
         var eversion = document.querySelector("#version");
-        eversion.innerText = version;
+        eversion.innerText = Telegram.WebApp.version;
 
         var eplatform = document.querySelector("#platform");
-        eplatform.innerText = platform;
+        eplatform.innerText = Telegram.WebApp.platform;
 
         var ecolorScheme = document.querySelector("#colorScheme");
-        ecolorScheme.innerText = colorScheme;
+        ecolorScheme.innerText = Telegram.WebApp.colorScheme;
 
         var ethemeParams = document.querySelector("#themeParams");
-        ethemeParams.innerText = themeParams;
+        ethemeParams.innerText = Telegram.WebApp.themeParams;
 
         var eisExpanded = document.querySelector("#isExpanded");
-        eisExpanded.innerText = isExpanded;
+        eisExpanded.innerText = Telegram.WebApp.isExpanded;
 
         var eviewportHeight = document.querySelector("#viewportHeight");
-        eviewportHeight.innerText = viewportHeight;
+        eviewportHeight.innerText = Telegram.WebApp.viewportHeight;
 
         var eviewportStableHeight = document.querySelector("#viewportStableHeight");
-        eviewportStableHeight.innerText = viewportStableHeight;
+        eviewportStableHeight.innerText = Telegram.WebApp.viewportStableHeight;
 
         var eheaderColor = document.querySelector("#headerColor");
-        eheaderColor.innerText = headerColor;
+        eheaderColor.innerText = Telegram.WebApp.headerColor;
 
         var ebackgroundColor = document.querySelector("#backgroundColor");
-        ebackgroundColor.innerText = backgroundColor;
+        ebackgroundColor.innerText = Telegram.WebApp.backgroundColor;
 
         var eisClosingConfirmationEnabled = document.querySelector("#isClosingConfirmationEnabled");
-        eisClosingConfirmationEnabled.innerText = isClosingConfirmationEnabled;
+        eisClosingConfirmationEnabled.innerText = Telegram.WebApp.isClosingConfirmationEnabled;
 
         var eBackButton = document.querySelector("#BackButton");
-        eBackButton.innerText = BackButton;
+        eBackButton.innerText = Telegram.WebApp.BackButton;
 
         var eMainButton = document.querySelector("#MainButton");
-        eMainButton.innerText = MainButton;
+        eMainButton.innerText = Telegram.WebApp.MainButton;
 
         var eHapticFeedback = document.querySelector("#HapticFeedback");
-        eHapticFeedback.innerText = HapticFeedback;
+        eHapticFeedback.innerText = Telegram.WebApp.HapticFeedback;
 
         var eCloudStorage = document.querySelector("#CloudStorage");
-        eCloudStorage.innerText = CloudStorage;
+        eCloudStorage.innerText = Telegram.WebApp.CloudStorage;
 
       }
 
