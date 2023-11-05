@@ -91,6 +91,27 @@
         <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
         <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
     </div>
+
+    <div id="viewport"></div>
+    <div id="viewport-params-size"></div>
+    <div id="viewport-params-expand"></div>
+    <div id="initData"></div>
+    <div id="initDataUnsafe"></div>
+    <div id="version"></div>
+    <div id="platform"></div>
+    <div id="colorScheme"></div>
+    <div id="themeParams"></div>
+    <div id="isExpanded"></div>
+    <div id="viewportHeight"></div>
+    <div id="viewportStableHeight"></div>
+    <div id="headerColor"></div>
+    <div id="backgroundColor"></div>
+    <div id="isClosingConfirmationEnabled"></div>
+    <div id="BackButton"></div>
+    <div id="MainButton"></div>
+    <div id="HapticFeedback"></div>
+    <div id="CloudStorage"></div>
+
     </main>
     <div id="viewport"></div>
     <!-- <div id="viewport-params-size"></div>
@@ -107,13 +128,12 @@
 
       // Show main button
       Telegram.WebApp.MainButton.setParams({
-        text: "LVBET",
+        text: "~LVBET",
       });
       Telegram.WebApp.MainButton.onClick(function () {
         // Telegram.WebApp.showAlert(initData + "|" + initDataUnsafe + "|" + version + "|" + platform + "|" + colorScheme + "|" + themeParams + "|" + isExpanded + "|" + viewportHeight + "|" + viewportStableHeight + "|" + headerColor + "|" + backgroundColor + "|" + isClosingConfirmationEnabled + "|" + BackButton + "|" + MainButton + "|" + HapticFeedback + "|" + CloudStorage);
         // Telegram.WebApp.showAlert(initData);
         Telegram.WebApp.showAlert('initData');
-        console.log(initData + "|" + initDataUnsafe + "|" + version + "|" + platform + "|" + colorScheme + "|" + themeParams + "|" + isExpanded + "|" + viewportHeight + "|" + viewportStableHeight + "|" + headerColor + "|" + backgroundColor + "|" + isClosingConfirmationEnabled + "|" + BackButton + "|" + MainButton + "|" + HapticFeedback + "|" + CloudStorage)
       });
       Telegram.WebApp.MainButton.show();
 
@@ -156,7 +176,56 @@
 
         var expandEl = document.querySelector("#viewport-params-expand");
         expandEl.innerText =
-          "Is Expanded: " + (Telegram.WebApp.isExpanded ? "true" : "false");
+        "Is Expanded: " + (Telegram.WebApp.isExpanded ? "true" : "false");
+
+        var einitData = document.querySelector("#initData");
+        einitData.innerText = initData;
+
+        var einitDataUnsafe = document.querySelector("#initDataUnsafe");
+        einitDataUnsafe.innerText = initDataUnsafe;
+
+        var eversion = document.querySelector("#version");
+        eversion.innerText = version;
+
+        var eplatform = document.querySelector("#platform");
+        eplatform.innerText = platform;
+
+        var ecolorScheme = document.querySelector("#colorScheme");
+        ecolorScheme.innerText = colorScheme;
+
+        var ethemeParams = document.querySelector("#themeParams");
+        ethemeParams.innerText = themeParams;
+
+        var eisExpanded = document.querySelector("#isExpanded");
+        eisExpanded.innerText = isExpanded;
+
+        var eviewportHeight = document.querySelector("#viewportHeight");
+        eviewportHeight.innerText = viewportHeight;
+
+        var eviewportStableHeight = document.querySelector("#viewportStableHeight");
+        eviewportStableHeight.innerText = viewportStableHeight;
+
+        var eheaderColor = document.querySelector("#headerColor");
+        eheaderColor.innerText = headerColor;
+
+        var ebackgroundColor = document.querySelector("#backgroundColor");
+        ebackgroundColor.innerText = backgroundColor;
+
+        var eisClosingConfirmationEnabled = document.querySelector("#isClosingConfirmationEnabled");
+        eisClosingConfirmationEnabled.innerText = isClosingConfirmationEnabled;
+
+        var eBackButton = document.querySelector("#BackButton");
+        eBackButton.innerText = BackButton;
+
+        var eMainButton = document.querySelector("#MainButton");
+        eMainButton.innerText = MainButton;
+
+        var eHapticFeedback = document.querySelector("#HapticFeedback");
+        eHapticFeedback.innerText = HapticFeedback;
+
+        var eCloudStorage = document.querySelector("#CloudStorage");
+        eCloudStorage.innerText = CloudStorage;
+
       }
 
       Telegram.WebApp.setHeaderColor("secondary_bg_color");
