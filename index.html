@@ -107,12 +107,13 @@
 
       // Show main button
       Telegram.WebApp.MainButton.setParams({
-        text: "Main Button2",
+        text: "LVBET",
       });
       Telegram.WebApp.MainButton.onClick(function () {
         // Telegram.WebApp.showAlert(initData + "|" + initDataUnsafe + "|" + version + "|" + platform + "|" + colorScheme + "|" + themeParams + "|" + isExpanded + "|" + viewportHeight + "|" + viewportStableHeight + "|" + headerColor + "|" + backgroundColor + "|" + isClosingConfirmationEnabled + "|" + BackButton + "|" + MainButton + "|" + HapticFeedback + "|" + CloudStorage);
         // Telegram.WebApp.showAlert(initData);
         Telegram.WebApp.showAlert('initData');
+        console.log(initData + "|" + initDataUnsafe + "|" + version + "|" + platform + "|" + colorScheme + "|" + themeParams + "|" + isExpanded + "|" + viewportHeight + "|" + viewportStableHeight + "|" + headerColor + "|" + backgroundColor + "|" + isClosingConfirmationEnabled + "|" + BackButton + "|" + MainButton + "|" + HapticFeedback + "|" + CloudStorage)
       });
       Telegram.WebApp.MainButton.show();
 
