@@ -78,18 +78,18 @@
   <body>
     <main>
       <div class="button-container">
-        <button class=""><img class="border object-contain h-64 w-64" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-64 w-64" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-64 w-64" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-64 w-64" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-64 w-64" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-64 w-64" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-64 w-64" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-64 w-64" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-64 w-64" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-64 w-64" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-64 w-64" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-64 w-64" src="./img/launcher.jpg" alt=""> Button 1</button>
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
     </div>
     </main>
     <div id="viewport"></div>
@@ -110,7 +110,8 @@
         text: "Main Button",
       });
       Telegram.WebApp.MainButton.onClick(function () {
-        Telegram.WebApp.showAlert(initData + "|" + initDataUnsafe + "|" + version + "|" + platformn + "|" + colorScheme + "|" + themeParams + "|" + isExpanded + "|" + viewportHeight + "|" + viewportStableHeight + "|" + headerColor + "|" + backgroundColor + "|" + isClosingConfirmationEnabled + "|" + BackButton + "|" + MainButton + "|" + HapticFeedback + "|" + CloudStorage);
+        // Telegram.WebApp.showAlert(initData + "|" + initDataUnsafe + "|" + version + "|" + platform + "|" + colorScheme + "|" + themeParams + "|" + isExpanded + "|" + viewportHeight + "|" + viewportStableHeight + "|" + headerColor + "|" + backgroundColor + "|" + isClosingConfirmationEnabled + "|" + BackButton + "|" + MainButton + "|" + HapticFeedback + "|" + CloudStorage);
+        Telegram.WebApp.showAlert(initData);
       });
       Telegram.WebApp.MainButton.show();
 
