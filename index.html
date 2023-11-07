@@ -78,40 +78,16 @@
   <body>
     <main>
       <div class="button-container">
-        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
-        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Button 1</button>
-    </div>
-
-    <div id="viewport"></div>
-    <div id="viewport-params-size"></div>
-    <div id="viewport-params-expand"></div>
-    <div id="initData"></div>
-    <div id="initDataUnsafe"></div>
-    <div id="version"></div>
-    <div id="platform"></div>
-    <div id="colorScheme"></div>
-    <div id="themeParams"></div>
-    <div id="isExpanded"></div>
-    <div id="viewportHeight"></div>
-    <div id="viewportStableHeight"></div>
-    <div id="headerColor"></div>
-    <div id="backgroundColor"></div>
-    <div id="isClosingConfirmationEnabled"></div>
-    <div id="BackButton"></div>
-    <div id="MainButton"></div>
-    <div id="HapticFeedback"></div>
-    <div id="CloudStorage"></div>
-
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Contacts</button>
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> TnG Payment Gateway</button>
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Deposit Bank Accounts</button>
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Game Tips</button>
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Game Download Links</button>
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Telegram Channel</button>
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Promotion</button>
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Company Game Rule</button>
+        <button class=""><img class="border object-contain h-32 w-32" src="./img/launcher.jpg" alt=""> Register</button>
+     </div>
     </main>
     <div id="viewport"></div>
     <!-- <div id="viewport-params-size"></div>
@@ -131,7 +107,7 @@
         text: "~LVBET",
       });
       Telegram.WebApp.MainButton.onClick(function () {
-        Telegram.WebApp.showAlert(Telegram.WebApp.initData + "|" + Telegram.WebApp.initDataUnsafe + "|" + Telegram.WebApp.version + "|" + Telegram.WebApp.platform + "|" + Telegram.WebApp.colorScheme + "|" + Telegram.WebApp.themeParams + "|" + Telegram.WebApp.isExpanded + "|" + Telegram.WebApp.viewportHeight + "|" + Telegram.WebApp.viewportStableHeight + "|" + Telegram.WebApp.headerColor + "|" + Telegram.WebApp.backgroundColor + "|" + Telegram.WebApp.isClosingConfirmationEnabled + "|" + Telegram.WebApp.BackButton + "|" + Telegram.WebApp.MainButton + "|" + Telegram.WebApp.HapticFeedback + "|" + Telegram.WebApp.CloudStorage);
+        Telegram.WebApp.showAlert(Telegram.WebApp.version);
         // Telegram.WebApp.showAlert(Telegram.WebApp.initData);
       });
       Telegram.WebApp.MainButton.show();
@@ -179,51 +155,6 @@
 
         var einitData = document.querySelector("#initData");
         einitData.innerText = Telegram.WebApp.initData;
-
-        var einitDataUnsafe = document.querySelector("#initDataUnsafe");
-        einitDataUnsafe.innerText = Telegram.WebApp.initDataUnsafe;
-
-        var eversion = document.querySelector("#version");
-        eversion.innerText = Telegram.WebApp.version;
-
-        var eplatform = document.querySelector("#platform");
-        eplatform.innerText = Telegram.WebApp.platform;
-
-        var ecolorScheme = document.querySelector("#colorScheme");
-        ecolorScheme.innerText = Telegram.WebApp.colorScheme;
-
-        var ethemeParams = document.querySelector("#themeParams");
-        ethemeParams.innerText = Telegram.WebApp.themeParams;
-
-        var eisExpanded = document.querySelector("#isExpanded");
-        eisExpanded.innerText = Telegram.WebApp.isExpanded;
-
-        var eviewportHeight = document.querySelector("#viewportHeight");
-        eviewportHeight.innerText = Telegram.WebApp.viewportHeight;
-
-        var eviewportStableHeight = document.querySelector("#viewportStableHeight");
-        eviewportStableHeight.innerText = Telegram.WebApp.viewportStableHeight;
-
-        var eheaderColor = document.querySelector("#headerColor");
-        eheaderColor.innerText = Telegram.WebApp.headerColor;
-
-        var ebackgroundColor = document.querySelector("#backgroundColor");
-        ebackgroundColor.innerText = Telegram.WebApp.backgroundColor;
-
-        var eisClosingConfirmationEnabled = document.querySelector("#isClosingConfirmationEnabled");
-        eisClosingConfirmationEnabled.innerText = Telegram.WebApp.isClosingConfirmationEnabled;
-
-        var eBackButton = document.querySelector("#BackButton");
-        eBackButton.innerText = Telegram.WebApp.BackButton;
-
-        var eMainButton = document.querySelector("#MainButton");
-        eMainButton.innerText = Telegram.WebApp.MainButton;
-
-        var eHapticFeedback = document.querySelector("#HapticFeedback");
-        eHapticFeedback.innerText = Telegram.WebApp.HapticFeedback;
-
-        var eCloudStorage = document.querySelector("#CloudStorage");
-        eCloudStorage.innerText = Telegram.WebApp.CloudStorage;
 
       }
 
